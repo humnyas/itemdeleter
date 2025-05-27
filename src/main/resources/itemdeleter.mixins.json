@@ -3,7 +3,6 @@
 	"package": "fabric.humnyas.itemdeleter.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
