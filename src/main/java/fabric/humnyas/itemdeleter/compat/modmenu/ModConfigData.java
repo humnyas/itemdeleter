@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static fabric.humnyas.itemdeleter.utils.Constants.*;
+import static me.shedaniel.autoconfig.annotation.ConfigEntry.Gui.*;
 
 @Config(name = "item")
 public class ModConfigData implements ConfigData {
@@ -23,19 +24,14 @@ public class ModConfigData implements ConfigData {
                     .build())
             .build();
 
-    @SerialEntry
-    public boolean recipesDeleted;
-    @SerialEntry
-    public boolean lootTablesDeleted;
-    @SerialEntry
-    public boolean mobDropsDeleted;
-    @SerialEntry
-    public boolean tileDropsDeleted;
-    @SerialEntry
-    public boolean recipeViewerDeleted;
-    @SerialEntry
-    public boolean creativeMenuDeleted;
+    @RequiresRestart @SerialEntry public boolean recipesDeleted;
+    @RequiresRestart @SerialEntry public boolean lootTablesDeleted;
+    @RequiresRestart @SerialEntry public boolean mobDropsDeleted;
+    @RequiresRestart @SerialEntry public boolean tileDropsDeleted;
+    @RequiresRestart @SerialEntry public boolean recipeViewerDeleted;
+    @RequiresRestart @SerialEntry public boolean creativeMenuDeleted;
+    @RequiresRestart @SerialEntry public boolean tagAttendanceDeleted;
 
-    @SerialEntry
+    @RequiresRestart @SerialEntry
     public List<String> deletedItems = new ArrayList<>();
 }

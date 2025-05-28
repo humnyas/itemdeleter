@@ -24,7 +24,7 @@
 		"emi": [
 			"fabric.humnyas.itemdeleter.compat.emi.EMIIntegration"
 		],
-		"rei": [
+		"rei_client": [
 			"fabric.humnyas.itemdeleter.compat.rei.REIIntegration"
 		]
 	},

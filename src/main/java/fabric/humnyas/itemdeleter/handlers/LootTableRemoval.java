@@ -1,7 +1,6 @@
 package fabric.humnyas.itemdeleter.handlers;
 
 import com.mojang.datafixers.util.Either;
-import fabric.humnyas.itemdeleter.ItemDeleter;
 import fabric.humnyas.itemdeleter.compat.modmenu.ModConfigData;
 import fabric.humnyas.itemdeleter.mixin.accessors.*;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
@@ -22,7 +21,6 @@ import java.util.stream.Collectors;
 public class LootTableRemoval {
     // ENTRY
     public static void initialise(ModConfigData config) {
-        long start = System.nanoTime();
         LootTableEvents.REPLACE.register((key, original, source, registries) -> {
             if (!shouldRunClass(config, key.getValue())) return original;
 
@@ -48,8 +46,6 @@ public class LootTableRemoval {
 
             return newBuilder.build();
         });
-        long end = System.nanoTime();
-        ItemDeleter.LOGGER.info("Loot table processing took {} µs", (end - start) / 1000);
     }
 
 
@@ -100,8 +96,6 @@ public class LootTableRemoval {
         } else if (entry instanceof TagEntry tagEntry) {
             collectFromTagEntry(tagEntry, items);
 
-        } else {
-            ItemDeleter.LOGGER.warn("Unsupported LootPoolEntry type: {}", entry.getClass().getSimpleName());
         }
     }
 

@@ -17,4 +17,5 @@ public class ItemDeleter implements ModInitializer {
 		ModConfigData.HANDLER.load();
 		DeleterEntryPoint.initialise();
 	}
+
 }
