@@ -1,10 +1,17 @@
 {
-	"required": true,
-	"package": "fabric.humnyas.itemdeleter.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "fabric.humnyas.itemdeleter.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "RecipeRemovalMixin",
+    "accessors.CombinedEntryAccessor",
+    "accessors.ItemEntryAccessor",
+    "accessors.LootPoolAccessor",
+    "accessors.LootTableAccessor",
+    "accessors.LootTableEntryAccessor",
+    "accessors.TagEntryAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }

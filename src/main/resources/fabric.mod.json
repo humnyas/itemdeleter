@@ -18,11 +18,14 @@
 		"main": [
 			"fabric.humnyas.itemdeleter.ItemDeleter"
 		],
-		"client": [
-			"fabric.humnyas.itemdeleter.client.ItemDeleterClient"
-		],
 		"modmenu": [
           "fabric.humnyas.itemdeleter.compat.modmenu.ModMenuIntegration"
+		],
+		"emi": [
+			"fabric.humnyas.itemdeleter.compat.emi.EMIIntegration"
+		],
+		"rei": [
+			"fabric.humnyas.itemdeleter.compat.rei.REIIntegration"
 		]
 	},
 	"mixins": [

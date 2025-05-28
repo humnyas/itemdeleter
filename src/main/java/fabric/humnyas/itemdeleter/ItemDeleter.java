@@ -1,6 +1,7 @@
 package fabric.humnyas.itemdeleter;
 
 import fabric.humnyas.itemdeleter.compat.modmenu.ModConfigData;
+import fabric.humnyas.itemdeleter.handlers.DeleterEntryPoint;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -14,5 +15,6 @@ public class ItemDeleter implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModConfigData.HANDLER.load();
+		DeleterEntryPoint.initialise();
 	}
 }
