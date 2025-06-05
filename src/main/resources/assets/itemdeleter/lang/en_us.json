@@ -1,0 +1,32 @@
+{
+  "itemdeleter.config.title": "Title",
+  "itemdeleter.config.category.name": "ItemDeleter",
+  "itemdeleter.config.category.tooltip": "All the configs for the mod ItemDeleter",
+
+  "itemdeleter.config.boolean_option.name": "Deletion Sources",
+  "itemdeleter.config.boolean_option.description": "These options allow for control of where the items are deleted from. By default, they are removed everywhere, but if you would like more control over this mod's range, it is available.",
+
+  "itemdeleter.config.list_option.name": "Deleted Items",
+  "itemdeleter.config.list_option.description": "This list includes all the items that are going to be 'deleted' from the game, in the sense that they will be unobtainable, and will not show up in recipe viewers, along with the creative inventory.",
+
+  "itemdeleter.config.option.recipes.name": "Recipes Deleted",
+  "itemdeleter.config.option.recipes.description": "Removes all recipes for the items.",
+
+  "itemdeleter.config.option.loot_tables.name": "Loot Tables Deleted",
+  "itemdeleter.config.option.loot_tables.description": "Removes the items from all the loot tables.",
+
+  "itemdeleter.config.option.mob_drops.name": "Mob Drops Deleted",
+  "itemdeleter.config.option.mob_drops.description": "Makes sure the items cannot be dropped from any mobs.",
+
+  "itemdeleter.config.option.tile_drops.name": "Tile Drops Deleted",
+  "itemdeleter.config.option.tile_drops.description": "Makes sure the items cannot be dropped from breaking any blocks/static entities.",
+
+  "itemdeleter.config.option.recipe_viewer.name": "Recipe Viewer Deleted",
+  "itemdeleter.config.option.recipe_viewer.description": "Disables viewing the items in compatible recipe viewers.",
+
+  "itemdeleter.config.option.creative_menu.name": "Creative Menu Deleted",
+  "itemdeleter.config.option.creative_menu.description": "Disables viewing the items in the creative menu.",
+
+  "itemdeleter.config.option.tag_attendance.name": "Tag Attendance Deleted",
+  "itemdeleter.config.option.tag_attendance.description": "Removes the items from every tag they attend. Keeps the tags themselves intact otherwise."
+}

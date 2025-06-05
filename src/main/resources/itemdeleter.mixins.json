@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "net.humnyas.itemdeleter.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"RecipeRemovalMixin",
+		"accessors.CombinedEntryAccessor",
+		"accessors.ItemEntryAccessor",
+		"accessors.LootPoolAccessor",
+		"accessors.LootTableAccessor",
+		"accessors.LootTableEntryAccessor",
+		"accessors.TagEntryAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
